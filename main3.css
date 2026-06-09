@@ -1,0 +1,32 @@
+    table, tr, th, td, caption{
+        border: 3px solid #0a0808;
+        font-family: 'Times New Roman', Times, serif;
+        border-collapse: collapse;
+        padding: 0.5rem;
+    }
+
+
+    h1{
+        color: rgb(19, 10, 12);
+        border: #a66666 5px double;
+        width: 50%;
+        background-color: rgb(231, 240, 179);
+        margin-left: 150px;
+     }
+
+    main{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+    main{
+        margin: 5em;
+        color: rgb(252, 94, 9);
+        border: #000000 3px solid;
+        padding: 4em;
+        width: 50%;
+        background-color: aquamarine;
+        outline: #65cc04 10px double;
+        outline-offset: 20px;
+     }
+

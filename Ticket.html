@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="HarishSripathachar">
+        <meta name="Description" content="TicketBooking">
+        <title>TicketBooking</title>
+        <link rel="icon" href="Images/IR_icon.png">
+    </head>
+    <body>
+        <header>
+        <h1>WELCOME TO IRCTC TICKET BOOKING</h1>
+        <nav>
+            <a href="FirstProject.html">-Home Page</a>&nbsp;&nbsp;&nbsp;
+            <a href="Schedule.html">-Train Departures</a>&nbsp;&nbsp;&nbsp;
+            <link rel="stylesheet" href="main3.css">
+        </nav>
+            <h2>Reservation Form</h2>
+        </header>
+        <main>
+            <form action="https://httpbin.org/post" method="post">
+                <p><label for="IRCTCusername">IRCTCusername:</label>
+                <input type="text" name="IRCTCusername" id="IRCTCusername" required></p>
+                <p><label for="Password">Password:</label>
+                <input type="password" name="Password" id="Password" required></p>
+                <p><label for="Train_No">Train No:</label>
+                <input type="tel" name="Train_No" id="Train_No" pattern="[0-9]{5}" required></p>
+                <p><label for="Train_Name">Train Name:</label>
+                <input type="text" name="Train_Name" id="Train_Name"></p>
+                    <p>
+                        <label for="Class">Class:</label>
+                        <Select name="Class" id="Class">
+                        <optgroup label="Reservation">
+                            <option value="3A">3A</option>
+                            <option value="2A">2A</option>
+                            <option value="1A">1A</option>
+                            <option value="SL">SL</option>
+                            <option value="CC">CC</option>
+                            <Option value="EC">EC</Option>
+                            <option value="2S">2S</option>
+                        </optgroup>
+                        <optgroup label="Unreservation">
+                            <option value="UnReservation">UnReservation</option>
+                        </optgroup>
+                        <optgroup label="Platform">
+                            <option value="Platform_Ticket">Platform Ticket</option>
+                        </optgroup>
+                        <optgroup label="Parking">
+                            <option value="2W">2W parking</option>
+                            <option value="4W">4W parking</option>
+                        </optgroup>
+                        </Select>
+                    </p>
+                <p><label for="Day">Day:</label>
+                <input type="number" name="Day" id="Day" min="1" max="31"></p>
+                <p><label for="Monthh">Month:</label>
+                <input type="number" name="Month" id="Monthh" min="1" max="12"></p>
+                <p><label for="Year">Year:</label>
+                <input type="number" name="Year" id="Year" min="2000" max="2030"></p>
+                <p><label for="Source">From:</label>
+                <input type="text" name="Source" id="Source" required></p> 
+                <p><label for="Destination">To:</label>
+                <input type="text" name="Destination" id="Destination" required></p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>  
+            </form>
+        </main>
+        <footer>
+            <h2>THANK YOU, HAPPY JOURNEY</h2>
+        </footer>
+    </body>    
+</html>
